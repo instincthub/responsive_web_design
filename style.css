@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana,sans-serif;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.title-banner{
+    background-color: teal;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container{
+    padding: 15px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 2em;
+    margin-top: 50px;
+}
+p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 100;
+}
+
+
+/* Media Query */
+/* The Deference between min and max width */
+
+/* @media screen and (max-width: 768px) {
+    h2{
+        color: red;
+    }
+} */
+
+@media screen and (min-width: 768px) {
+    .item-wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .item{
+        width: 30%;
+    }
+}
